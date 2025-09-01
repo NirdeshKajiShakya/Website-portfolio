@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navigation for the portfolio-->
+    <nav class="nav">   
+        <div class="container nav-inner">
+            <a href="#home" class="brand">Nirdesh Kaji Shakya</a>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="downloadResume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-inner">
+            <img src="Images/profile.jpg" alt="Your Name" class="profile-img"/>
+            <div class="hero-text">
+                <h1>I'm <span class="accent">Nirdesh Kaji Shakya</span></h1>
+                <p class="subtitle">Computer Science student • Aspiring Developer</p>
+                <div class="cta">
+                    <a class="btn" href="#contact">Contact me</a>
+                    <a class="btn ghost" href="#projects">See projects</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section container">
+            <h3>About Me</h3>
+            <p>
+                An inspired student of Computer Science
+                who is a specialist in artificial intelligence at
+                Softwarica college. I am also passionate
+                about problem solving, software
+                development and the implementation of
+                technical knowledge to real world projects.
+                Interested in obtaining internship
+                experiences to improve knowledge in
+                software development, database
+                management and AI apps.
+            </p>
+        </section>
+
+        <!--skills-->
+        <section id="skills" class="section container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h3>Python<br>Java<br>HTML<br>Javascript<br>MySQL</h3>
+                    </div>
+                </div>
+        </section>
+
+        <!--projects-->
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div id="projectsGrid" class="projects-grid">
+                
+
+            </div>
+        </section>
+
+        <!--contact-->
+        <section id="contact" class="section container">
+            <h2>Contact</h2>
+            <form id="contactForm" class="contact-form">
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit" class="btn">Send Message</button>
+                <div id="formMsg" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark theme">Toggle Theme</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
