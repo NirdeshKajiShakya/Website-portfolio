@@ -52,6 +52,15 @@ body {
     font-size: 1.05rem;
 }
 
+.nav-links {
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+.nav-links a { text-decoration:none; color:var(--muted); padding:8px 10px; border-radius:8px; }
+.nav-links a:hover { color:var(--text); background:rgba(0,0,0,0.03); }
+
 /* Hero */
 .profile-img {
     width: 120px;
